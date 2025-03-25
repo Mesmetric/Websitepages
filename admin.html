@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Portfolio</title>
+  <link rel="stylesheet" href="admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+  <div class="admin-container">
+    <header class="admin-header">
+      <h1>Admin Dashboard</h1>
+      <div class="admin-actions">
+        <button id="save-all-button" class="save-all-button">Save All Changes</button>
+        <button id="generate-script-button" class="generate-button">Generate Script for Vercel</button>
+        <button id="export-data-button" class="export-button">Export Data</button>
+        <button id="import-data-button" class="import-button">Import Data</button>
+        <input type="file" id="import-file" accept=".json" style="display: none;">
+        <a href="index.html" class="back-button">Back to Site</a>
+      </div>
+    </header>
+
+    <div class="admin-tabs">
+      <button class="tab-button active" data-tab="profile">Profile</button>
+      <button class="tab-button" data-tab="about">About</button>
+      <button class="tab-button" data-tab="skills">Skills</button>
+      <button class="tab-button" data-tab="experience">Experience</button>
+      <button class="tab-button" data-tab="portfolio">Portfolio</button>
+      <button class="tab-button" data-tab="videos">Videos</button>
+      <button class="tab-button" data-tab="social">Social Links</button>
+      <button class="tab-button" data-tab="visibility">Visibility</button>
+      <button class="tab-button" data-tab="settings">Settings</button>
+    </div>
+
+    <div class="admin-content">
+      <!-- Profile Section -->
+      <section id="profile-section" class="tab-content active">
+        <h2>Profile Information</h2>
+        <div class="form-group">
+          <label for="profile-name">Name</label>
+          <input type="text" id="profile-name" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="profile-title">Title</label>
+          <input type="text" id="profile-title" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="profile-email">Email</label>
+          <input type="email" id="profile-email" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="profile-phone">Phone</label>
+          <input type="text" id="profile-phone" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="profile-location">Location</label>
+          <input type="text" id="profile-location" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="profile-image">Profile Image URL</label>
+          <input type="text" id="profile-image" class="form-input">
+        </div>
+        <button id="save-profile-button" class="save-button">Save Profile</button>
+      </section>
+
+      <!-- About Section -->
+      <section id="about-section" class="tab-content">
+        <h2>About Information</h2>
+        <div class="form-group">
+          <label for="about-content">About Text</label>
+          <textarea id="about-content" class="form-textarea" rows="6"></textarea>
+        </div>
+        <button id="save-about-button" class="save-button">Save About</button>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills-section" class="tab-content">
+        <h2>Skills</h2>
+        <div id="skills-list" class="items-list">
+          <!-- Skills will be populated by JavaScript -->
+        </div>
+        <div class="form-group">
+          <button id="add-skill-button" class="add-button">Add New Skill</button>
+        </div>
+        <button id="save-skills-button" class="save-button">Save Skills</button>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience-section" class="tab-content">
+        <h2>Experience</h2>
+        <div id="experience-list" class="items-list">
+          <!-- Experience items will be populated by JavaScript -->
+        </div>
+        <div class="form-group">
+          <button id="add-experience-button" class="add-button">Add New Experience</button>
+        </div>
+        <button id="save-experience-button" class="save-button">Save Experience</button>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio-section" class="tab-content">
+        <h2>Portfolio Projects</h2>
+        <div id="projects-list" class="items-list">
+          <!-- Projects will be populated by JavaScript -->
+        </div>
+        <div class="form-group">
+          <button id="add-project-button" class="add-button">Add New Project</button>
+        </div>
+        <button id="save-portfolio-button" class="save-button">Save Portfolio</button>
+      </section>
+
+      <!-- Videos Section -->
+      <section id="videos-section" class="tab-content">
+        <h2>Videos</h2>
+        <div id="videos-list" class="items-list">
+          <!-- Videos will be populated by JavaScript -->
+        </div>
+        <div class="form-group">
+          <button id="add-video-button" class="add-button">Add New Video</button>
+        </div>
+        <button id="save-videos-button" class="save-button">Save Videos</button>
+      </section>
+
+      <!-- Social Links Section -->
+      <section id="social-section" class="tab-content">
+        <h2>Social Links</h2>
+        <div id="social-links-list" class="items-list">
+          <!-- Social links will be populated by JavaScript -->
+        </div>
+        <div class="form-group">
+          <button id="add-social-button" class="add-button">Add New Social Link</button>
+        </div>
+        <button id="save-social-button" class="save-button">Save Social Links</button>
+      </section>
+
+      <!-- Section Visibility -->
+      <section id="visibility-section" class="tab-content">
+        <h2>Section Visibility</h2>
+        <p class="section-description">Control which sections are visible on your portfolio website.</p>
+        <div id="visibility-list" class="visibility-list">
+          <!-- Section visibility checkboxes will be populated by JavaScript -->
+        </div>
+        <button id="save-visibility-button" class="save-button">Save Visibility Settings</button>
+      </section>
+
+      <!-- Settings Section -->
+      <section id="settings-section" class="tab-content">
+        <h2>Admin Settings</h2>
+        <div class="form-group">
+          <label for="admin-username">Username</label>
+          <input type="text" id="admin-username" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="admin-password">Password</label>
+          <input type="password" id="admin-password" class="form-input">
+        </div>
+        <div class="form-group">
+          <label for="admin-confirm-password">Confirm Password</label>
+          <input type="password" id="admin-confirm-password" class="form-input">
+        </div>
+        <button id="save-settings-button" class="save-button">Save Settings</button>
+
+        <div class="storage-options">
+          <h3>Storage Options</h3>
+          <div class="storage-option">
+            <h4>Local Storage</h4>
+            <p>Your data is currently stored in your browser's local storage.</p>
+            <button id="clear-storage-button" class="danger-button">Clear All Data</button>
+          </div>
+          
+          <div class="storage-option">
+            <h4>Vercel Deployment</h4>
+            <p>To deploy your changes to Vercel, generate a script.js file and upload it to your Vercel project.</p>
+            <div class="storage-actions">
+              <button id="generate-script-button-alt" class="secondary-button">Generate Script.js</button>
+            </div>
+          </div>
+          
+          <div class="storage-option">
+            <h4>Export/Import</h4>
+            <p>Export your data to a file or import from a file.</p>
+            <div class="storage-actions">
+              <button id="export-button" class="secondary-button">Export to File</button>
+              <button id="import-button" class="secondary-button">Import from File</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
+

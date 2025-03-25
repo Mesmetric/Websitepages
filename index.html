@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aakash Rajbanshi - Flutter Developer</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+<div class="min-h-screen bg-gradient-to-br text-white relative">
+  <!-- Gradient lines for edges -->
+  <div class="edge-gradients">
+    <div class="edge-top"></div>
+    <div class="edge-bottom"></div>
+    <div class="edge-left"></div>
+    <div class="edge-right"></div>
+  </div>
+
+  <div class="container">
+    <!-- Profile Sidebar -->
+    <div class="sidebar">
+      <div class="profile-card">
+        <div class="profile-content">
+          <div class="profile-image-container">
+            <div class="profile-image-wrapper">
+              <img id="profile-image" src="/placeholder.svg" alt="Profile Image" class="profile-image">
+            </div>
+            <div class="status-indicator">
+              <div class="status-dot"></div>
+            </div>
+          </div>
+
+          <h1 id="profile-name" class="profile-name">Aakash Rajbanshi</h1>
+
+          <div class="profile-title-container">
+            <span id="profile-title" class="profile-title">Flutter Developer</span>
+          </div>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-label">EMAIL</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-amber">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span id="profile-email" class="contact-text">contact@aakashrajbanshi.com.np</span>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">PHONE</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-amber">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span id="profile-phone" class="contact-text">+977 9812345678</span>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">LOCATION</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-amber">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span id="profile-location" class="contact-text">Kathmandu, Nepal</span>
+            </div>
+          </div>
+
+          <div id="social-links" class="social-links">
+            <!-- Social links will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="content-card">
+        <!-- Navigation -->
+        <div class="navigation">
+          <nav class="nav-links">
+            <button class="nav-link active" data-section="about">About</button>
+            <button class="nav-link" data-section="resume">Resume</button>
+            <button class="nav-link" data-section="portfolio">Portfolio</button>
+            <button class="nav-link" data-section="videos">Videos</button>
+            <button class="nav-link" data-section="contact">Contact</button>
+          </nav>
+        </div>
+
+        <!-- Content Sections -->
+        <div class="content-sections">
+          <!-- About Section -->
+          <section id="about" class="section active">
+            <h2 class="section-title">
+              About Me
+              <span class="title-underline"></span>
+            </h2>
+
+            <div class="about-text">
+              <p id="about-content" class="text-paragraph">I am a skilled Flutter developer with over 3 years of experience in building cross-platform mobile applications. My expertise includes working with REST APIs, implementing complex UI/UX designs, and utilizing various state management solutions.</p>
+              <p class="text-paragraph">If you're seeking a skilled Flutter developer to breathe life into your project and exceed your expectations, I am here to collaborate and create magic together. Reach out, and let's transform your vision into a reality!</p>
+            </div>
+
+            <h2 class="section-title mt-large">
+              What I'm Doing
+              <span class="title-underline"></span>
+            </h2>
+
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">
+                  <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                      <path d="M12 18h.01" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Mobile Apps</h3>
+                  <p class="service-description">Professional development of applications for Android and iOS.</p>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" />
+                      <path d="M9 3v18" />
+                      <path d="M13 3v18" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Web Development</h3>
+                  <p class="service-description">High-quality development of sites at the professional level.</p>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 20h9" />
+                      <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">UI/UX Design</h3>
+                  <p class="service-description">The most modern and high-quality design made at a professional level.</p>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-icon">
+                  <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                      <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                      <line x1="6" y1="6" x2="6.01" y2="6" />
+                      <line x1="6" y1="18" x2="6.01" y2="18" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Backend Development</h3>
+                  <p class="service-description">High-performance backend services designed for scalability and seamless user experience.</p>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="section-title mt-large">
+              Skills
+              <span class="title-underline"></span>
+            </h2>
+
+            <div id="skills-grid" class="skills-grid">
+              <!-- Skills will be populated by JavaScript -->
+            </div>
+          </section>
+
+          <!-- Resume Section -->
+          <section id="resume" class="section">
+            <div class="resume-header">
+              <h2 class="section-title">
+                Resume
+                <span class="title-underline"></span>
+              </h2>
+
+              <button class="download-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV
+              </button>
+            </div>
+
+            <!-- Education Section -->
+            <div class="resume-section">
+              <div class="resume-section-header">
+                <div class="resume-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                  </svg>
+                </div>
+                <h3 class="resume-section-title">Education</h3>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <div class="timeline-header">
+                      <div class="timeline-title">Niharika College Of Management And Information Technology</div>
+                      <div class="timeline-date">2017 — 2021</div>
+                    </div>
+                    <div class="timeline-description">Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)</div>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <div class="timeline-header">
+                      <div class="timeline-title">Greenland International College</div>
+                      <div class="timeline-date">2015 — 2017</div>
+                    </div>
+                    <div class="timeline-description">+2 Science</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="resume-section">
+              <div class="resume-section-header">
+                <div class="resume-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <h3 class="resume-section-title">Experience</h3>
+              </div>
+
+              <div id="experience-timeline" class="timeline">
+                <!-- Experience items will be populated by JavaScript -->
+              </div>
+            </div>
+          </section>
+
+          <!-- Portfolio Section -->
+          <section id="portfolio" class="section">
+            <h2 class="section-title">
+              Portfolio
+              <span class="title-underline"></span>
+            </h2>
+
+            <div class="portfolio-filters">
+              <button class="portfolio-filter active" data-filter="all">All</button>
+              <button class="portfolio-filter" data-filter="application">Applications</button>
+              <button class="portfolio-filter" data-filter="web-development">Web Development</button>
+              <button class="portfolio-filter" data-filter="ui-ux">UI/UX</button>
+            </div>
+
+            <div id="portfolio-grid" class="portfolio-grid">
+              <!-- Portfolio items will be populated by JavaScript -->
+            </div>
+          </section>
+
+          <!-- Videos Section -->
+          <section id="videos" class="section">
+            <h2 class="section-title">
+              Videos
+              <span class="title-underline"></span>
+            </h2>
+
+            <div id="videos-grid" class="videos-grid">
+              <!-- Videos will be populated by JavaScript -->
+            </div>
+          </section>
+
+          <!-- Contact Section -->
+          <section id="contact" class="section">
+            <h2 class="section-title">
+              Contact
+              <span class="title-underline"></span>
+            </h2>
+
+            <div class="map-container">
+              <div class="map-placeholder">
+                <div class="map-content">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="map-icon">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <h3 id="map-location" class="map-location">Kathmandu, Nepal</h3>
+                  <a id="google-maps-link" href="#" target="_blank" rel="noopener noreferrer" class="map-link">
+                    View on Google Maps 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="contact-form-title">Contact Form</h3>
+
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Full name" required class="form-input">
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Email address" required class="form-input">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="subject" placeholder="Subject" required class="form-input">
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" placeholder="Your Message" required class="form-textarea"></textarea>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="submit-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
