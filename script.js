@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Load site data from localStorage or use default data
   const defaultData = {
-    name: "Aakash Rajbanshi",
-    title: "Flutter Developer",
+    name: "Michael Awojide",
+    title: "Global Finance Associate",
     email: "contact@aakashrajbanshi.com.np",
     phone: "+977 9812345678",
     location: "Kathmandu, Nepal",
